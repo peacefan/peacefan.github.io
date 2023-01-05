@@ -58,11 +58,15 @@ class App{
     
     loadGLTF(){
         // const loader = new GLTFLoader().setPath('../../assets/plane/');
-        const loader = new GLTFLoader().setPath('../../assets/seacity/');
+        // const loader = new GLTFLoader().setPath('../../assets/seacity/');
+        // const loader = new GLTFLoader().setPath('../../assets/grace/');
+        const loader = new GLTFLoader().setPath('../../assets/nurse/');
         loader.load(
             // 'microplane.glb',
-            'SeaCity.glb',
+            // 'SeaCity.glb',
             // 'SeaCity_2.glb',
+            // 'grace.glb',
+            'waving_nurse_v19.glb',
             gltf => {
                 this.scene.add(gltf.scene);
                 const bbox = new THREE.Box3().setFromObject(gltf.scene);
